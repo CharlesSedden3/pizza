@@ -1,4 +1,4 @@
-DELETE DATABASE if exits Pizzeria;
+DELETE DATABASE if exist Pizzeria;
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
 
