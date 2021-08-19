@@ -17,7 +17,7 @@ CREATE TABLE Orders(
     customer_id INT,
     PRIMARY KEY (order_id),
     FOREIGN KEY (pizza_id) REFERENCES Pizza(pizza_id),
-    FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
+    FOREIGN KEY (customer_id)
 );
 
 CREATE TABLE Customer(
