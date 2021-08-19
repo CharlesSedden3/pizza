@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS Pizzeria;
+DROP DATABASE if exists Pizzeria;
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
 
