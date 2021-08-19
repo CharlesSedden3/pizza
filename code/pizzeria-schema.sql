@@ -1,4 +1,3 @@
-DELETE DATABASE if exist Pizzeria;
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
 
@@ -31,7 +30,3 @@ CREATE TABLE Orders(
     FOREIGN KEY (pizza_id) REFERENCES Pizza(pizza_id),
     FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
 );
-
-
-
-
