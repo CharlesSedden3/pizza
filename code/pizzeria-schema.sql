@@ -12,6 +12,15 @@ CREATE TABLE Pizza(
     PRIMARY KEY (pizza_id)
 );
 
+CREATE TABLE Orders(
+    order_id INT AUTO_INCREMENT,
+    date_booking DATETIME NOT NULL,
+    pizza_id INT,
+    customer_id INT,
+    PRIMARY KEY (order_id),
+    FOREIGN KEY (pizza_id) REFERENCES Pizza(pizza_id),
+    FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
+);
 
 CREATE TABLE Customer(
 	customer_id INT AUTO_INCREMENT,
@@ -24,13 +33,4 @@ CREATE TABLE Customer(
 );
 
 
-CREATE TABLE Orders(
-    order_id INT AUTO_INCREMENT,
-    date_booking DATETIME NOT NULL,
-    pizza_id INT,
-    customer_id INT,
-    PRIMARY KEY (order_id),
-    FOREIGN KEY (pizza_id) REFERENCES Pizza(pizza_id),
-    FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
-);
 
