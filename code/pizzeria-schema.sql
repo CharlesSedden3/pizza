@@ -1,8 +1,5 @@
-DELETE DATABASE if exist Pizzeria;
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
-
-
 
 CREATE TABLE Pizza(
     pizza_id INT AUTO_INCREMENT,
