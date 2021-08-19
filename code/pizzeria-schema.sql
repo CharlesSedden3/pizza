@@ -1,9 +1,9 @@
---?.Creating and using database
+
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
 
 
---?.Creating tables
+
 CREATE TABLE Pizza(
     pizza_id INT AUTO_INCREMENT,
     pizza_type VARCHAR(40) NOT NULL,
