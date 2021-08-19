@@ -1,3 +1,4 @@
+DELETE DATABASE IF EXISTS Pizzeria;
 CREATE DATABASE Pizzeria;
 USE Pizzeria;
 
